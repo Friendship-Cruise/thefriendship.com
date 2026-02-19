@@ -3,3 +3,5 @@ assets/
 *.tar.gz
 homepage-raw-content.html
 .DS_Store
+.playwright-cli/
+screenshot-*.png
