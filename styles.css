@@ -57,28 +57,31 @@ a:hover {
 
 /* ===== Container ===== */
 .container {
-  max-width: 900px;
+  max-width: 750px;
   margin: 0 auto;
-  padding: 0 5%;
+  padding: 0 20px;
 }
 
 /* ===== Header ===== */
 .site-header {
   position: relative;
   z-index: 100;
-  padding: 15px 30px;
+  padding: 18px 30px;
 }
 
 .header-inner {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .header-logo img {
-  height: 30px;
+  height: 22px;
   width: auto;
   filter: invert(1);
+  opacity: 0.9;
 }
 
 .header-nav {
@@ -92,13 +95,13 @@ a:hover {
   list-style: none;
   display: flex;
   align-items: center;
-  gap: 16px;
+  gap: 14px;
 }
 
 .nav-links a {
   color: #ffffff;
   font-family: 'Bebas Neue', 'Impact', sans-serif;
-  font-size: 1.1rem;
+  font-size: 1rem;
   letter-spacing: 2px;
   text-transform: uppercase;
 }
@@ -120,76 +123,53 @@ a:hover {
   text-decoration: none;
 }
 
-/* ===== Hero Video Section ===== */
-.hero-section {
-  position: relative;
-  width: 100%;
-  padding-bottom: 56.25%;
-  overflow: hidden;
-}
-
-.hero-video-wrap {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.hero-video-wrap iframe {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 100vw;
-  height: 56.25vw;
-  min-height: 100%;
-  min-width: 177.78vh;
-  transform: translate(-50%, -50%);
-  border: none;
-  pointer-events: none;
+.social-links svg {
+  width: 16px;
+  height: 16px;
 }
 
 /* ===== Section Headings ===== */
 .section-heading {
   font-family: 'Bebas Neue', 'Impact', sans-serif;
   color: #8cf7ff;
-  font-size: 2.5rem;
+  font-size: 2rem;
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
   letter-spacing: 2px;
 }
 
 @media (max-width: 767px) {
   .section-heading {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
   }
 }
 
 /* ===== Signup Section ===== */
 .signup-section {
-  padding: 50px 0 40px;
+  padding: 60px 0 50px;
   text-align: center;
 }
 
 .hero-tagline {
   font-family: 'Bebas Neue', 'Impact', sans-serif;
   color: #8cf7ff;
-  font-size: 2.8rem;
+  font-size: 2.2rem;
   letter-spacing: 3px;
   margin-bottom: 30px;
 }
 
 @media (max-width: 767px) {
   .hero-tagline {
-    font-size: 2rem;
+    font-size: 1.6rem;
   }
 }
 
 .signup-card {
-  background: rgba(30, 30, 30, 0.85);
-  border-radius: 15px;
-  padding: 40px 35px;
-  max-width: 600px;
+  background: rgba(20, 20, 20, 0.9);
+  border: 1px solid rgba(60, 60, 60, 0.5);
+  border-radius: 10px;
+  padding: 35px 30px;
+  max-width: 520px;
   margin: 0 auto;
   text-align: left;
 }
@@ -197,7 +177,7 @@ a:hover {
 .signup-heading {
   font-family: 'Bebas Neue', 'Impact', sans-serif;
   color: #ffffff;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   letter-spacing: 2px;
   text-align: center;
   margin-bottom: 5px;
@@ -205,9 +185,9 @@ a:hover {
 
 .signup-required {
   text-align: right;
-  font-size: 0.8rem;
+  font-size: 0.75rem;
   color: #999;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
 }
 
 .signup-form {
@@ -215,32 +195,32 @@ a:hover {
 }
 
 .form-group {
-  margin-bottom: 20px;
+  margin-bottom: 18px;
 }
 
 .form-group label {
   display: block;
-  font-size: 0.85rem;
+  font-size: 0.8rem;
   font-weight: 600;
   color: #cccccc;
-  margin-bottom: 6px;
+  margin-bottom: 5px;
 }
 
 .form-group input {
   width: 100%;
-  padding: 12px 14px;
+  padding: 10px 12px;
   border: 1px solid #555;
-  border-radius: 6px;
-  background: #2a2a2a;
+  border-radius: 4px;
+  background: #1a1a1a;
   color: #ffffff;
-  font-size: 1rem;
+  font-size: 0.95rem;
   font-family: inherit;
   outline: none;
   transition: border-color 0.3s;
 }
 
 .form-group input::placeholder {
-  color: #777;
+  color: #666;
 }
 
 .form-group input:focus {
@@ -249,8 +229,8 @@ a:hover {
 
 .form-disclaimer {
   margin-top: 8px;
-  font-size: 0.7rem;
-  color: #888;
+  font-size: 0.65rem;
+  color: #777;
   line-height: 1.4;
 }
 
@@ -260,21 +240,21 @@ a:hover {
 
 .btn-subscribe {
   display: inline-block;
-  padding: 12px 30px;
-  border: none;
-  border-radius: 6px;
-  background: #333;
+  padding: 10px 24px;
+  border: 1px solid #555;
+  border-radius: 4px;
+  background: #2a2a2a;
   color: #ffffff;
   font-family: inherit;
-  font-size: 0.95rem;
+  font-size: 0.9rem;
   font-weight: 600;
   cursor: pointer;
   transition: background 0.3s;
-  margin-top: 5px;
+  margin-top: 8px;
 }
 
 .btn-subscribe:hover {
-  background: #555;
+  background: #3a3a3a;
 }
 
 /* ===== Spotify Section ===== */
@@ -290,21 +270,21 @@ a:hover {
 
 /* ===== Video Section ===== */
 .video-section {
-  padding: 40px 0;
+  padding: 40px 0 50px;
   text-align: center;
 }
 
 .video-card {
-  background: #4f4f4f;
-  border-radius: 25px;
-  padding: 25px;
+  background: rgba(40, 40, 40, 0.7);
+  border-radius: 15px;
+  padding: 20px;
 }
 
 .video-responsive {
   position: relative;
   width: 100%;
   padding-bottom: 56.25%;
-  border-radius: 12px;
+  border-radius: 8px;
   overflow: hidden;
 }
 
@@ -321,10 +301,11 @@ a:hover {
 .site-footer {
   padding: 50px 20px 30px;
   text-align: center;
+  border-top: 1px solid rgba(60, 60, 60, 0.3);
 }
 
 .footer-inner {
-  max-width: 800px;
+  max-width: 700px;
   margin: 0 auto;
 }
 
@@ -332,7 +313,7 @@ a:hover {
   list-style: none;
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 16px;
   margin-bottom: 25px;
 }
 
@@ -340,11 +321,11 @@ a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 44px;
-  height: 44px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
-  border: 1px solid #666;
-  color: #ffffff;
+  border: 1px solid #555;
+  color: #cccccc;
   transition: border-color 0.2s, color 0.2s;
 }
 
@@ -355,13 +336,13 @@ a:hover {
 }
 
 .footer-legal {
-  font-size: 0.75rem;
-  color: #999;
-  line-height: 1.8;
+  font-size: 0.7rem;
+  color: #888;
+  line-height: 2;
 }
 
 .footer-legal a {
-  color: #999;
+  color: #888;
   margin: 0 3px;
 }
 
@@ -402,7 +383,7 @@ a:hover {
 /* ===== Scroll Animations ===== */
 .fade-in {
   opacity: 0;
-  transform: translateY(30px);
+  transform: translateY(20px);
   transition: opacity 0.8s ease, transform 0.8s ease;
 }
 
