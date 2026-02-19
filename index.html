@@ -58,16 +58,25 @@
 
         <div class="signup-card fade-in">
           <h2 class="signup-heading">SIGN UP FOR FUTURE TRANSMISSIONS</h2>
-          <p class="signup-required">* indicates required</p>
+          <p class="signup-required"><span class="asterisk">*</span> indicates required</p>
 
           <form action="https://thefriendship.us17.list-manage.com/subscribe/post?u=843f310e3ae3144622cd15e96&amp;id=3d3a8dd41b&amp;f_id=008640e0f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="signup-form" target="_blank" novalidate>
             <div class="form-group">
-              <label for="mce-EMAIL">Email Address *</label>
+              <label for="mce-EMAIL">Email Address <span class="asterisk">*</span></label>
               <input type="email" name="EMAIL" id="mce-EMAIL" required>
             </div>
             <div class="form-group">
               <label for="mce-SMSPHONE">SMS Phone Number</label>
-              <input type="tel" name="SMSPHONE" id="mce-SMSPHONE" placeholder="+1 000 000 0000">
+              <div class="phone-input-wrap">
+                <div class="phone-country">
+                  <span class="phone-flag" aria-label="US flag">&#x1F1FA;&#x1F1F8;</span>
+                  <svg width="12" height="12" viewBox="0 0 16 17" fill="none"><path d="M8 11.56c-.18 0-.35-.07-.47-.2l-4-4a.67.67 0 01.94-.95L8 9.95l3.53-3.54a.67.67 0 01.95.95l-4 4a.67.67 0 01-.48.2z" fill="currentColor"/></svg>
+                  <select name="SMSPHONE[country]" aria-label="Country code">
+                    <option value="US">USA +1</option>
+                  </select>
+                </div>
+                <input type="tel" name="SMSPHONE" id="mce-SMSPHONE" placeholder="+1 000 000 0000">
+              </div>
               <p class="form-disclaimer">The Friendship - By providing your phone number and checking the box, you agree to receive promotional and marketing messages, notifications, and customer service communications from The Friendship. Message and data rates may apply. Consent is not a condition of purchase. Message frequency varies. Text HELP for help. Text STOP to cancel. <a href="http://eepurl.com/iIxJ1w" target="_blank" rel="noopener">See terms</a></p>
             </div>
             <button type="submit" class="btn-subscribe">Subscribe</button>
