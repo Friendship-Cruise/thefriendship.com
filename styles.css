@@ -198,10 +198,11 @@ a:hover {
 
 .hero-tagline {
   font-family: 'Bebas Neue', 'Impact', sans-serif;
-  color: #8cf7ff;
+  color: #ffffff;
   font-size: 2.2rem;
   letter-spacing: 3px;
   margin-bottom: 30px;
+  text-shadow: 2px 2px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 0 2px 4px rgba(0,0,0,0.7);
 }
 
 @media (max-width: 767px) {
