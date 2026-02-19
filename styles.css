@@ -77,8 +77,6 @@ a:hover {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  max-width: 1200px;
-  margin: 0 auto;
 }
 
 .header-logos {
@@ -171,17 +169,15 @@ a:hover {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 180%;
-  height: 180%;
   pointer-events: none;
   z-index: 0;
 }
 
 .video-bg iframe {
-  width: 100%;
-  height: 100%;
+  width: 1280px;
+  height: 720px;
+  max-width: 1000%;
   border: none;
-  object-fit: cover;
 }
 
 .signup-section .container {
