@@ -159,9 +159,13 @@ a:hover {
 /* ===== Signup Section ===== */
 .signup-section {
   position: relative;
-  padding: 60px 0 50px;
+  padding: 100px 0 80px;
   text-align: center;
   overflow: hidden;
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .video-bg {
