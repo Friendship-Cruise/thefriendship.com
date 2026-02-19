@@ -22,6 +22,7 @@ body {
   background-repeat: no-repeat;
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
+  padding-top: 60px;
 }
 
 @media (max-width: 767px) {
@@ -68,9 +69,13 @@ a:hover {
 
 /* ===== Header ===== */
 .site-header {
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
   z-index: 100;
   padding: 18px 30px;
+  background: #3a3a40;
 }
 
 .header-inner {
