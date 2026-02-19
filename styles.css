@@ -403,7 +403,7 @@ a:hover {
 .site-footer {
   padding: 50px 20px 30px;
   text-align: center;
-  border-top: 1px solid rgba(60, 60, 60, 0.3);
+  background: #3a3a40;
 }
 
 .footer-inner {
