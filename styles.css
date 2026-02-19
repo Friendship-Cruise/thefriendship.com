@@ -81,10 +81,21 @@ a:hover {
   margin: 0 auto;
 }
 
+.header-logos {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
 .header-logo img {
   height: 22px;
   width: auto;
   opacity: 0.9;
+}
+
+.header-amf {
+  height: 28px;
+  width: auto;
 }
 
 .header-nav {
