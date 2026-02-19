@@ -1,0 +1,5 @@
+wordpress_backup/
+assets/
+*.tar.gz
+homepage-raw-content.html
+.DS_Store

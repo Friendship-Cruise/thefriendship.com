@@ -1,0 +1,368 @@
+/* ===== Reset & Base ===== */
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', Helvetica, Arial, sans-serif;
+  color: #ffffff;
+  background-color: #1d1d22;
+  background-image: url('images/bg-desktop.jpg');
+  background-size: 150%;
+  background-position: center top;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+@media (max-width: 767px) {
+  body {
+    background-image: url('images/bg-mobile.jpg');
+    background-size: 400%;
+    background-repeat: repeat-y;
+  }
+}
+
+/* ===== Container ===== */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20%;
+}
+
+@media (max-width: 1024px) {
+  .container {
+    padding: 0 5%;
+  }
+}
+
+@media (max-width: 767px) {
+  .container {
+    padding: 0 3%;
+  }
+}
+
+/* ===== Hero Section ===== */
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  min-height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.hero-video-wrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.hero-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  padding: 100px 20% 350px;
+}
+
+@media (max-width: 767px) {
+  .hero-content {
+    padding: 75px 5% 200px;
+  }
+}
+
+.hero-logo {
+  max-width: 100%;
+  width: 1024px;
+  height: auto;
+}
+
+.hero-curve {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  line-height: 0;
+}
+
+.hero-curve svg {
+  width: 100%;
+  height: 100px;
+}
+
+/* ===== Poster Section ===== */
+.poster-section {
+  position: relative;
+  margin-top: -200px;
+  padding-bottom: 40px;
+  z-index: 2;
+}
+
+@media (max-width: 767px) {
+  .poster-section {
+    margin-top: -150px;
+    padding-bottom: 10px;
+  }
+}
+
+.poster-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+/* ===== Section Headings ===== */
+.section-heading {
+  font-family: 'Bebas Neue', 'Impact', sans-serif;
+  color: #8cf7ff;
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 30px;
+  letter-spacing: 2px;
+}
+
+@media (max-width: 767px) {
+  .section-heading {
+    font-size: 1.8rem;
+  }
+}
+
+/* ===== Feature Cards ===== */
+.features-section {
+  padding: 20px 0 40px;
+}
+
+.feature-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  background: #4f4f4f;
+  border-radius: 25px;
+  padding: 30px;
+}
+
+@media (max-width: 1024px) {
+  .feature-cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 767px) {
+  .feature-cards {
+    padding: 25px;
+  }
+}
+
+.feature-card {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+  overflow: hidden;
+  aspect-ratio: 4 / 3;
+  text-decoration: none;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.feature-card-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.6s ease;
+}
+
+.feature-card:hover .feature-card-bg {
+  transform: scale(1.08);
+}
+
+.feature-card-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  transition: background 0.4s ease;
+}
+
+.feature-card:hover .feature-card-overlay {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.feature-card-content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  padding: 20px;
+}
+
+.feature-card-content h2 {
+  font-family: 'Bebas Neue', 'Impact', sans-serif;
+  font-size: 2rem;
+  letter-spacing: 3px;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 767px) {
+  .feature-card-content h2 {
+    font-size: 1.6rem;
+  }
+}
+
+/* ===== Spotify Section ===== */
+.spotify-section {
+  padding: 40px 0;
+  text-align: center;
+}
+
+.embed-wrap {
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+/* ===== Video Section ===== */
+.video-section {
+  padding: 40px 0;
+  text-align: center;
+}
+
+.video-card {
+  background: #4f4f4f;
+  border-radius: 25px;
+  padding: 25px;
+}
+
+.video-responsive {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.video-responsive iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* ===== Signup Section ===== */
+.signup-section {
+  padding: 40px 0 80px;
+  text-align: center;
+}
+
+.signup-card {
+  background: #4f4f4f;
+  border-radius: 25px;
+  padding: 40px 30px;
+}
+
+.signup-text {
+  font-size: 1.1rem;
+  margin-bottom: 25px;
+  color: #cccccc;
+}
+
+.signup-fields {
+  display: flex;
+  gap: 12px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+@media (max-width: 600px) {
+  .signup-fields {
+    flex-direction: column;
+  }
+}
+
+.signup-fields input[type="email"] {
+  flex: 1;
+  padding: 14px 18px;
+  border: 2px solid #666;
+  border-radius: 8px;
+  background: #2a2a2a;
+  color: #ffffff;
+  font-size: 1rem;
+  font-family: inherit;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.signup-fields input[type="email"]::placeholder {
+  color: #888;
+}
+
+.signup-fields input[type="email"]:focus {
+  border-color: #8cf7ff;
+}
+
+.signup-fields button {
+  padding: 14px 28px;
+  border: none;
+  border-radius: 8px;
+  background: #8cf7ff;
+  color: #1c1c1c;
+  font-family: 'Bebas Neue', 'Impact', sans-serif;
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+  white-space: nowrap;
+}
+
+.signup-fields button:hover {
+  background: #aaf9ff;
+  transform: translateY(-1px);
+}
+
+/* ===== Scroll Animations ===== */
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}

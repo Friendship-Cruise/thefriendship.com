@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The FriendShip 2026 - Music Cruise</title>
+  <meta name="description" content="The FriendShip 2026 - 5 nights sailing from Miami to Belize with a 24-hour private island party.">
+  <meta property="og:title" content="The FriendShip 2026">
+  <meta property="og:description" content="5 nights sailing from Miami to Belize with a 24-hour private island party.">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Hero Section with Video Background -->
+  <section class="hero">
+    <div class="hero-video-wrap">
+      <video autoplay muted loop playsinline class="hero-video">
+        <source src="https://thefriendship.com/wp-content/uploads/2023/05/Friendship-2024-Splash-Video.mp4" type="video/mp4">
+        <source src="https://thefriendship.com/wp-content/uploads/2023/05/Friendship-2024-Splash-Video.webm" type="video/webm">
+      </video>
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="hero-content">
+      <img src="images/logo.png" alt="Friendship 2026" class="hero-logo">
+    </div>
+    <div class="hero-curve">
+      <svg viewBox="0 0 1440 100" preserveAspectRatio="none">
+        <path d="M0,100 C360,0 1080,0 1440,100 L1440,100 L0,100 Z" fill="rgba(0,0,0,0.01)"></path>
+      </svg>
+    </div>
+  </section>
+
+  <!-- Main Poster / Lineup -->
+  <section class="poster-section">
+    <div class="container">
+      <img src="images/lineup.png" alt="Friendship 2026 Lineup" class="poster-image fade-in">
+    </div>
+  </section>
+
+  <!-- Feature Cards -->
+  <section class="features-section">
+    <div class="container">
+      <div class="feature-cards">
+        <a href="https://thefriendship.com/the-friendship-experience/" class="feature-card fade-in" target="_blank" rel="noopener">
+          <div class="feature-card-bg" style="background-image: url('images/experience.jpg')"></div>
+          <div class="feature-card-overlay"></div>
+          <div class="feature-card-content">
+            <h2>THE FRIENDSHIP EXPERIENCE</h2>
+          </div>
+        </a>
+        <a href="https://thefriendship.com/route/" class="feature-card fade-in" target="_blank" rel="noopener">
+          <div class="feature-card-bg" style="background-image: url('images/route.webp')"></div>
+          <div class="feature-card-overlay"></div>
+          <div class="feature-card-content">
+            <h2>WHERE WE'RE GOING</h2>
+          </div>
+        </a>
+        <a href="https://thefriendship.com/whats-on-board/" class="feature-card fade-in" target="_blank" rel="noopener">
+          <div class="feature-card-bg" style="background-image: url('images/onboard.jpg')"></div>
+          <div class="feature-card-overlay"></div>
+          <div class="feature-card-content">
+            <h2>WHAT'S ON BOARD</h2>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Spotify Playlist -->
+  <section class="spotify-section">
+    <div class="container">
+      <h2 class="section-heading fade-in">THE SOUNDS OF FRIENDSHIP</h2>
+      <div class="embed-wrap fade-in">
+        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/5HtdV0AXAt5gVZ3byljfTV?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- YouTube Video -->
+  <section class="video-section">
+    <div class="container">
+      <h2 class="section-heading fade-in">THIS IS FRIENDSHIP</h2>
+      <div class="video-card fade-in">
+        <div class="video-responsive">
+          <iframe src="https://www.youtube.com/embed/0zx1L5K_DUI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Mailchimp Signup -->
+  <section class="signup-section">
+    <div class="container">
+      <h2 class="section-heading fade-in">STAY IN THE LOOP</h2>
+      <div class="signup-card fade-in">
+        <!-- Replace ACTION_URL and FIELD_NAME with your Mailchimp form values -->
+        <form action="ACTION_URL" method="post" class="signup-form" target="_blank" novalidate>
+          <p class="signup-text">Sign up for updates on lineups, tickets, and all things Friendship.</p>
+          <div class="signup-fields">
+            <input type="email" name="EMAIL" placeholder="Your email address" required>
+            <button type="submit">SIGN UP</button>
+          </div>
+          <!-- Bot protection -->
+          <div style="position: absolute; left: -5000px;" aria-hidden="true">
+            <input type="text" name="b_FIELD_NAME" tabindex="-1" value="">
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <script src="main.js"></script>
+</body>
+</html>
