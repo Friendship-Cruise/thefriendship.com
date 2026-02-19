@@ -318,6 +318,17 @@ a:hover {
   font-size: 1.1rem;
 }
 
+.phone-error {
+  display: none;
+  color: #e74c3c;
+  font-size: 0.75rem;
+  margin-top: 5px;
+}
+
+.phone-error.visible {
+  display: block;
+}
+
 .form-disclaimer {
   margin-top: 8px;
   font-size: 0.65rem;
