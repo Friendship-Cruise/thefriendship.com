@@ -46,6 +46,10 @@ if (signupForm) {
   signupForm.addEventListener('submit', (e) => {
     if (!validatePhone()) {
       e.preventDefault();
+      return;
+    }
+    if (phoneInput.value !== '') {
+      phoneInput.value = '+1' + phoneInput.value.replace(/\D/g, '');
     }
   });
 }
