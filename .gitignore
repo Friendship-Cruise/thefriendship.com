@@ -3,5 +3,8 @@ assets/
 *.tar.gz
 homepage-raw-content.html
 .DS_Store
+.claude/
+.playwright/
 .playwright-cli/
 screenshot-*.png
+screenshots/
