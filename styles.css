@@ -258,6 +258,37 @@ a:hover {
   }
 }
 
+.btn-merch {
+  display: inline-block;
+  padding: 12px 48px;
+  font-family: 'Bebas Neue', 'Impact', sans-serif;
+  font-size: 1.4rem;
+  letter-spacing: 3px;
+  color: #ffffff;
+  background: rgba(140, 247, 255, 0.15);
+  border: 2px solid #8cf7ff;
+  border-radius: 6px;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: background 0.2s, color 0.2s;
+  margin-bottom: 30px;
+}
+
+.btn-merch:hover {
+  background: #8cf7ff;
+  color: #1c1c1c;
+  text-decoration: none;
+}
+
+@media (max-width: 767px) {
+  .btn-merch {
+    padding: 10px 36px;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    margin-bottom: 24px;
+  }
+}
+
 .signup-card {
   background: rgba(20, 20, 20, 0.9);
   border: 1px solid rgba(60, 60, 60, 0.5);
