@@ -154,10 +154,19 @@ a:hover {
 
   .header-logo img {
     height: 18px;
+    min-width: 0;
+    flex-shrink: 1;
+  }
+
+  .header-logo {
+    min-width: 0;
+    flex-shrink: 1;
   }
 
   .header-amf {
     height: 22px;
+    min-width: 0;
+    flex-shrink: 1;
   }
 
   .header-nav {
